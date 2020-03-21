@@ -1,8 +1,9 @@
 ---
 slug: rust-dropping-things-in-another-thread
 date: 2020-03-21
-title: 'Rust: Dropping heavy things in another thread can be 10000 times faster'
+title: 'Rust: Dropping heavy things in another thread can make your code 10000 times faster'
 description: 'When working on Rust applications or CLIs that need to show something to the end user as fast as possible I often find that a significant chunk of the time is usually spent not in doing any computations, but in dropping large data structures at the end of the function. We can optimize it by deferring the `drop` and moving it to another thread...'
+banner: './banner.png'
 published: true
 ---
 
