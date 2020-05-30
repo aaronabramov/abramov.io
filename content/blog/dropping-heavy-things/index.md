@@ -48,7 +48,7 @@ In this example, we spawn another thread, move the heavy data structure into it 
 
 
 Here's a small example of working with a `HashMap<usize, Vec<usize>>` data structure that has 1M keys.
-The function that defers dropping to another therad performs about 10K times faster
+The function that defers dropping to another therad runs about 10K times faster since the only work it needs to do is to start a new thread
 
 ```
 // drop in another thread 0.087471ms
