@@ -44,7 +44,7 @@ fn get_size(a: HeavyThing) -> usize {
 }
 ```
 
-In this example, we spawn another thread, move the heavy data structure into it and froget about it. The function returns right away and somewhere in the future the other thread will start doing the work of dropping the data structure and deallocating all used memory.
+In this example, we spawn another thread, move the heavy data structure into it and forget about it. The function returns right away and somewhere in the future the other thread will start doing the work of dropping the data structure and deallocating all used memory.
 
 
 Here's a small example of working with a `HashMap<usize, Vec<usize>>` data structure that has 1M keys.
